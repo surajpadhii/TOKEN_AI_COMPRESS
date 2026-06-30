@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 
 class CompressionResponse(BaseModel):
+    request_id: str
     compressed: str
     original: str
     original_tokens: int

@@ -34,3 +34,8 @@ def my_dashboard(
         db=db,
         client_id=client.id,
     )
+@router.get("/today")
+def today_dashboard(
+    db: Session = Depends(get_db),
+):
+    return dashboard_service.get_today_stats(db)

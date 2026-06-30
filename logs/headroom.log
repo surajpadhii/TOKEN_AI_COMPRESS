@@ -1,0 +1,36 @@
+2026-06-28 00:33:50.670 | INFO     | app.services.compression_service:compress:29 - Compression completed | Original=57, Compressed=28, Saved=29, Ratio=0.49, Time=348.63 ms
+2026-06-28 10:33:59.090 | INFO     | app.services.compression_service:compress:29 - Compression completed | Original=3, Compressed=3, Saved=0, Ratio=1.00, Time=1.9 ms
+2026-06-28 11:22:30.253 | INFO     | app.services.compression_service:compress:34 - Compression completed | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=0.1 ms
+2026-06-28 11:25:16.127 | INFO     | app.services.compression_service:compress:34 - Compression completed | Original=64, Compressed=32, Saved=32, Ratio=0.50, Time=396.37 ms
+2026-06-28 11:45:40.770 | INFO     | app.services.compression_service:compress:34 - Compression completed | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=0.08 ms
+2026-06-28 16:51:38.719 | INFO     | app.services.compression_service:compress:43 - Compression completed | Mode=balanced | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=0.08 ms
+2026-06-28 16:54:50.031 | INFO     | app.services.compression_service:compress:43 - Compression completed | Mode=fast | Original=10, Compressed=8, Saved=2, Ratio=0.80, Time=489.65 ms
+2026-06-29 04:44:00.511 | INFO     | app.services.compression_service:compress:43 - Compression completed | Mode=fast | Original=7, Compressed=7, Saved=0, Ratio=1.00, Time=0.2 ms
+2026-06-29 04:45:55.749 | INFO     | app.services.compression_service:compress:43 - Compression completed | Mode=maximum | Original=12, Compressed=3, Saved=9, Ratio=0.25, Time=638.64 ms
+2026-06-29 05:09:46.417 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=4, Compressed=4, Saved=0, Ratio=1.00, Time=4.21 ms
+2026-06-29 05:10:13.459 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=2.74 ms
+2026-06-29 05:10:40.558 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=817.24 ms
+2026-06-29 05:10:57.912 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=251.33 ms
+2026-06-29 05:11:40.480 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=103.26 ms
+2026-06-29 05:11:41.152 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=31.81 ms
+2026-06-29 05:11:41.790 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=28.74 ms
+2026-06-29 05:11:42.453 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=11, Compressed=8, Saved=3, Ratio=0.73, Time=26.25 ms
+2026-06-29 05:13:08.947 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=7, Compressed=7, Saved=0, Ratio=1.00, Time=1.93 ms
+2026-06-29 05:13:27.357 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=15, Compressed=12, Saved=3, Ratio=0.80, Time=344.01 ms
+2026-06-29 05:13:36.928 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=18, Compressed=14, Saved=4, Ratio=0.78, Time=90.77 ms
+2026-06-29 05:13:45.067 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=18, Compressed=14, Saved=4, Ratio=0.78, Time=67.75 ms
+2026-06-29 05:13:45.676 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=18, Compressed=14, Saved=4, Ratio=0.78, Time=34.72 ms
+2026-06-29 05:18:05.262 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=2, Compressed=2, Saved=0, Ratio=1.00, Time=4.54 ms
+2026-06-29 05:18:15.748 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=4, Compressed=4, Saved=0, Ratio=1.00, Time=0.85 ms
+2026-06-29 05:18:33.511 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=1.0 ms
+2026-06-29 05:18:40.324 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=0.93 ms
+2026-06-29 05:18:46.164 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=0.59 ms
+2026-06-29 05:18:46.555 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=0.87 ms
+2026-06-29 05:18:46.764 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=0.62 ms
+2026-06-29 05:18:46.982 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=8, Compressed=8, Saved=0, Ratio=1.00, Time=0.98 ms
+2026-06-29 14:10:52.652 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=1.47 ms
+2026-06-29 14:10:56.138 | INFO     | app.services.compression_service:compress:50 - Compression completed | Mode=fast | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=1.99 ms
+2026-06-29 14:23:54.570 | INFO     | app.services.compression_service:compress:54 - Compression completed | Mode=fast | Original=9, Compressed=9, Saved=0, Ratio=1.00, Time=4.28 ms
+2026-06-29 14:23:55.709 | INFO     | app.services.compression_service:compress:54 - Compression completed | Mode=fast | Original=9, Compressed=9, Saved=0, Ratio=1.00, Time=1.35 ms
+2026-06-29 14:28:25.276 | INFO     | app.services.compression_service:compress:54 - Compression completed | Mode=fast | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=5.44 ms
+2026-06-29 14:28:26.761 | INFO     | app.services.compression_service:compress:54 - Compression completed | Mode=fast | Original=1, Compressed=1, Saved=0, Ratio=1.00, Time=1.89 ms

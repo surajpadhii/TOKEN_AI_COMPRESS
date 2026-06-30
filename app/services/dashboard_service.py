@@ -1,3 +1,5 @@
+from datetime import date
+
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
@@ -7,8 +9,36 @@ from app.database.models import UsageLog
 class DashboardService:
 
     def get_summary(self, db: Session):
-        ...
-        return {...}
+        total_requests = db.query(UsageLog).count()
+
+        original_tokens = (
+            db.query(func.sum(UsageLog.original_tokens)).scalar() or 0
+        )
+
+        compressed_tokens = (
+            db.query(func.sum(UsageLog.compressed_tokens)).scalar() or 0
+        )
+
+        tokens_saved = (
+            db.query(func.sum(UsageLog.tokens_saved)).scalar() or 0
+        )
+
+        avg_ratio = (
+            db.query(func.avg(UsageLog.compression_ratio)).scalar() or 0
+        )
+
+        avg_time = (
+            db.query(func.avg(UsageLog.processing_time_ms)).scalar() or 0
+        )
+
+        return {
+            "total_requests": total_requests,
+            "original_tokens": original_tokens,
+            "compressed_tokens": compressed_tokens,
+            "tokens_saved": tokens_saved,
+            "average_compression_ratio": round(avg_ratio, 3),
+            "average_processing_time_ms": round(avg_time, 2),
+        }
 
     def get_history(
         self,
@@ -85,6 +115,40 @@ class DashboardService:
             "tokens_saved": tokens_saved,
             "average_ratio": round(avg_ratio, 3),
             "average_processing_time_ms": round(avg_time, 2),
+        }
+
+    def get_today_stats(
+        self,
+        db: Session,
+    ):
+        today = date.today()
+
+        total_requests = (
+            db.query(func.count(UsageLog.id))
+            .filter(func.date(UsageLog.created_at) == today)
+            .scalar()
+            or 0
+        )
+
+        tokens_saved = (
+            db.query(func.sum(UsageLog.tokens_saved))
+            .filter(func.date(UsageLog.created_at) == today)
+            .scalar()
+            or 0
+        )
+
+        average_ratio = (
+            db.query(func.avg(UsageLog.compression_ratio))
+            .filter(func.date(UsageLog.created_at) == today)
+            .scalar()
+            or 0
+        )
+
+        return {
+            "date": str(today),
+            "total_requests": total_requests,
+            "tokens_saved": tokens_saved,
+            "average_ratio": round(average_ratio, 3),
         }
 
 

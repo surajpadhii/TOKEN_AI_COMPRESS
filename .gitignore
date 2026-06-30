@@ -1,29 +1,11 @@
-cat > .gitignore << 'EOF'
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-
-# Virtual environment
 venv/
-
-# Environment variables
+__pycache__/
+*.pyc
+.git
+.gitignore
 .env
-
-# Database
-*.db
-
-# Logs
-logs/
-*.log
-
-# macOS
-.DS_Store
-
-# IDE
-.vscode/
-.idea/
-
-# Pytest
-.pytest_cache/
-EOF
+.env.*
+token_ai.db
+.pytest_cache
+.idea
+.vscode

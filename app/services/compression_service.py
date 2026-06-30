@@ -8,7 +8,8 @@ from app.core.enums import CompressionMode
 from app.core.logger import logger
 from app.database.models import APIKey
 from app.services.usage_service import usage_service
-
+from app.services.plan_service import plan_service
+from app.core.request_id import generate_request_id
 
 class CompressionService:
     """
@@ -25,7 +26,19 @@ class CompressionService:
         use_caveman: bool = False,
     ):
         start = time.perf_counter()
-
+        request_id = generate_request_id()
+        plan_service.validate_mode(
+        client,
+        compression_mode,
+        )
+        plan_service.validate_daily_limit(
+        db,
+        client,
+        )
+        plan_service.validate_rate_limit(
+        db,
+        client,
+    )
         target_ratio = COMPRESSION_MODES[compression_mode.value]
 
         try:
@@ -41,6 +54,7 @@ class CompressionService:
             )
 
             logger.info(
+                f"[{request_id}] "
                 f"Compression completed | "
                 f"Mode={compression_mode.value} | "
                 f"Original={result.original_tokens}, "
@@ -63,6 +77,7 @@ class CompressionService:
             )
 
             return {
+                "request_id": request_id,
                 "compressed": result.compressed,
                 "original": result.original,
                 "original_tokens": result.original_tokens,
